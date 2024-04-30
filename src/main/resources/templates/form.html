@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Travel Recommendation App</title>
+</head>
+<body  style="font-family: Verdana; color: #333232;">
+<h2>Hello!🙋‍♀️</h2>
+<h3>This app will help you plan your next awesome trip.</h3>   
+<form action="/recommend" method="post">
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country"><br>
+    <label for="activity">Activity:</label>
+    <input type="text" id="activity" name="activity"><br>
+    <label for="mood">Mood:</label>
+    <input type="text" id="mood" name="mood"><br>
+    <br><br>
+    <button type="submit" style="
+        font-family: Verdana;
+        background-color: transparent;
+        border: 1px solid;
+        padding: 6px 12px;
+        border-radius: .25rem;
+        color: #018ED3;
+        border-color: #018ED3;
+        "> 
+    Let's go!✈️</button>
+</form>
+</body>
+</html>
+
+
