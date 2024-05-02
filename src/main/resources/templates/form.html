@@ -2,30 +2,69 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Travel Recommendation App</title>
+    <style>
+        .container {
+            max-width: 380px;
+            padding: 120px 20px;
+        }
+        .container form {
+            margin-top: 40px;
+        }
+        .input_wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .input_wrap label {
+            max-width: 120px;
+            width: 100%;
+            display: block;
+        }
+        .input_wrap input {
+            max-width: calc(100% - 140px);
+            width: 100%;
+            padding: 7px;
+        }
+        .btn {
+            font-family: Verdana;
+            background-color: transparent;
+            border: 1px solid;
+            padding: 7px 12px;
+            border-radius: .25rem;
+            color: #018ED3;
+            border-color: #018ED3;
+            margin: 12px 0 0 0;
+            width: calc(100% - 120px);
+            float: right;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #018ED3;
+            color: #fff;
+        }
+    </style>    
 </head>
 <body  style="font-family: Verdana; color: #333232;">
-<h2>Hello!🙋‍♀️</h2>
-<h3>This app will help you plan your next awesome trip.</h3>   
-<form action="/recommend" method="post">
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country"><br>
-    <label for="activity">Activity:</label>
-    <input type="text" id="activity" name="activity"><br>
-    <label for="mood">Mood:</label>
-    <input type="text" id="mood" name="mood"><br>
-    <br><br>
-    <button type="submit" style="
-        font-family: Verdana;
-        background-color: transparent;
-        border: 1px solid;
-        padding: 6px 12px;
-        border-radius: .25rem;
-        color: #018ED3;
-        border-color: #018ED3;
-        "> 
-    Let's go!✈️</button>
-</form>
+    <div class="container">
+        <h2>Hello!🙋‍♀️</h2>
+        <h3>This app will help you plan your next awesome trip.</h3>   
+        <form action="/recommend" method="post">
+            <div class="input_wrap">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div class="input_wrap">
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity" name="activity">
+            </div>
+            <div class="input_wrap">
+                <label for="mood">Mood:</label>
+                <input type="text" id="mood" name="mood">
+            </div>
+            <button type="submit" class="btn">Let's go!✈️</button>
+        </form>
+    </div>
 </body>
 </html>
-
-
