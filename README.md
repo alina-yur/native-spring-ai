@@ -1,6 +1,6 @@
 # Native Spring AI
 
-This is a travel recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationService`. Note that the app is using an `OPENAI_API_KEY`.
+This is a travel recommendation service built with Spring AI, OpeAI, and GraalVM. The base is a regular Spring app, and the integration with OpenAI is implemented in `RecommendationService`. Note that the app is using `OPENAI_API_KEY`.
 
 ## Build a native app with GraalVM:
 
