@@ -13,7 +13,7 @@ public class RecommendationController {
     @Autowired
     private RecommendationService recommendationService;
 
-    @GetMapping("/request")
+    @GetMapping("/")
     public String form(Model model) {
         return "form";
     }
