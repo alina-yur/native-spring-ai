@@ -17,7 +17,7 @@ public class RecommendationService {
     public String getRecommendation(String country, String activity, String mood) {
         String message = """
                 You are acting as a travel recommendation service.
-                Provide a destination suggestion for a user based on their preferences.
+                Provide a destination suggestion for a user based on their preferences. Please don't use markdown syntax.
                 They prefer %s as the country, %s as the activity, and %s as the mood.
             """.formatted(country, activity, mood);
         PromptTemplate promptTemplate = new PromptTemplate(message);
