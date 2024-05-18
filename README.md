@@ -12,7 +12,7 @@ mvn -Pnative native:compile -DskipTests
 
 ```shell
 ./target/travelapp
-http://localhost:8080/request
+http://localhost:8080/
 ```
 
 After submitting your preferences, you'll get a generated recommendation – for example:
