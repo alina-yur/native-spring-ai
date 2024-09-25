@@ -5,7 +5,7 @@ This is a travel recommendation service built with Spring AI, OpeAI, and GraalVM
 ## Build a native app with GraalVM:
 
 ```shell
-mvn -Pnative native:compile -DskipTests
+mvn -Pnative native:compile
 ```
 
 ## Start the app and navigate to the travel request form:
